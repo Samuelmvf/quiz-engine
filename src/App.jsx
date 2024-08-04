@@ -1,10 +1,13 @@
-import './App.css'
+import './css/App.scss'
+import PageForm from "./pages/form/page-form.jsx";
+import Header from "./components/header/header.jsx";
 
 function App() {
 
   return (
     <>
-      <h1>Empty app</h1>
+      <Header />
+      <PageForm />
     </>
   )
 }
