@@ -1,0 +1,45 @@
+$darken-dark-teal: darken(#284849, 10%);
+
+.textarea {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border: 2px solid var(--color-white);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  resize: none;
+  overflow: auto;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-si-dark-teal);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-si-white);
+    border-radius: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-si-dark-teal);
+    border-radius: 0.25rem;
+    border: 2px solid var(--color-si-white);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: $darken-dark-teal;
+  }
+
+  &::placeholder {
+    color: gray;
+    text-align: center;
+  }
+}
