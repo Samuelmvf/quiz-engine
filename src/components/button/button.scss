@@ -1,0 +1,17 @@
+.button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  background: var(--color-si-teal);
+  color: var(--color-white);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-si-dark-teal);
+    transition: all 0.7s ease-out;
+  }
+}
+
