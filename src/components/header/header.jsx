@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <img
         className="header__logo"
-        src="../../../public/favicon.png"
+        src="/favicon.png"
         alt="quiz-engine logo"
       />
       <h1 className="header__title">Quiz Engine</h1>
