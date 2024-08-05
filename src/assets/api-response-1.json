@@ -1,0 +1,98 @@
+{
+  "id": 1,
+  "title": "Validate persons profile",
+  "questions": [
+    {
+      "id": 1,
+      "type": "oneChoice",
+      "requiredAnswers": [],
+      "title": "Estado civil",
+      "description": "Qual seu estado civil ?",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*5RywsoPi0Vr85TkS",
+        "description": "image description"
+      },
+      "options": [
+        {
+          "id": 1,
+          "label": "Solteiro"
+        },
+        {
+          "id": 2,
+          "label": "Casado"
+        },
+        {
+          "id": 3,
+          "label": "Bipede"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "multipleChoice",
+      "requiredAnswers": [],
+      "title": "Comida",
+      "description": "Quais frutas você gosta?",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*5RywsoPi0Vr85TkS",
+        "description": "image description"
+      },
+      "options": [
+        {
+          "id": 1,
+          "label": "Maça"
+        },
+        {
+          "id": 2,
+          "label": "Banana"
+        },
+        {
+          "id": 3,
+          "label": "Tomate"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "oneChoice",
+      "requiredAnswers": [{
+        "questionId": 2,
+        "answerId": 3
+      }],
+      "title": "Macarrão",
+      "description": "Com que frequência você faz massa de tomate?",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*5RywsoPi0Vr85TkS",
+        "description": "image description"
+      },
+      "options": [
+        {
+          "id": 1,
+          "label": "Sempre"
+        },
+        {
+          "id": 2,
+          "label": "Mensalmente"
+        },
+        {
+          "id": 3,
+          "label": "Nunca"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "inputText",
+      "requiredAnswers": [],
+      "title": "Comida",
+      "description": "Descreva aqui qual é o seu prato preferido e por quê?",
+      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*5RywsoPi0Vr85TkS"
+    }
+  ]
+}

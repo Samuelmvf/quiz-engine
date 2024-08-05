@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Skeleton from "@/components/skeleton/skeleton.jsx";
-import ImgUnavailable from "@/components/img-unavailable/img-unavailable.jsx";
+import ImgUnavailable from "@/components/svg/img-unavailable/img-unavailable.jsx";
 
 const LazyImg = ({ url, alt, height, width, ...props }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +39,7 @@ const LazyImg = ({ url, alt, height, width, ...props }) => {
     <img
       src={url}
       alt={alt}
-      style={{ height, width }}
+      style={{ height, width, borderRadius: "0.250rem" }}
       {...props}
     />
   );
