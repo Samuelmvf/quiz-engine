@@ -1,5 +1,5 @@
 import './css/App.scss'
-import PageForm from "./pages/form/page-form.jsx";
+import PageForm from "./pages/quiz/page-quiz.jsx";
 import Header from "./components/header/header.jsx";
 
 function App() {

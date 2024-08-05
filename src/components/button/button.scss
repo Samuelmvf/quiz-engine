@@ -5,12 +5,12 @@
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: normal;
-  background: var(--color-si-teal);
+  background: var(--color-si-aqua);
   color: var(--color-white);
   cursor: pointer;
 
   &:hover {
-    background: var(--color-si-dark-teal);
+    background: var(--color-si-teal);
     transition: all 0.7s ease-out;
   }
 }
