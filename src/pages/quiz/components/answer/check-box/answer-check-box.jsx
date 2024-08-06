@@ -3,8 +3,7 @@ import Checkbox from "@/components/check-box/check-box.jsx";
 
 const AnswerCheckBox = ({ options = [] }) => {
 
-  const { register, setValue, watch, formState: { errors } } = useFormContext();
-  const { answer } = errors;
+  const { register, setValue, watch } = useFormContext();
 
   const questionAnswers = watch("answer", []);
 
