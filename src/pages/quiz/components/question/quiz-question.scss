@@ -1,0 +1,33 @@
+.question {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &__text {
+      margin-left: var(--spacing-small);
+      font-size: 1.25rem;
+    }
+  }
+
+  &__description {
+    margin-top: var(--spacing-small);
+    font-size: 1rem;
+  }
+
+  &__image-container {
+    margin-top: var(--spacing-small);
+    display: flex;
+    justify-content: center;
+  }
+}
