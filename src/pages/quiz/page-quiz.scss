@@ -27,18 +27,5 @@ $font-title-size: 1.5rem;
       font-size: $font-title-size;
     }
   }
-
-  &__content {
-    flex:1;
-    color: var(--color-black);
-    line-height: 1.5rem;
-    margin-top: var(--spacing-medium);
-  }
-
-  &__actions {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: var(--spacing-medium);
-  }
 }
 
