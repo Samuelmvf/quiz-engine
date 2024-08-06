@@ -1,0 +1,18 @@
+.form {
+  flex:1;
+  color: var(--color-black);
+  line-height: 1.5rem;
+  margin-top: var(--spacing-medium);
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing-medium);
+
+    &--single-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: var(--spacing-medium);
+    }
+  }
+}
