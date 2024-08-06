@@ -1,17 +1,16 @@
-import React from 'react';
+import { forwardRef } from "react";
 import './text-area.scss';
 
-const TextArea = ({ value, onChange, placeholder, height, maxLength = 2000 }) => {
+const TextArea = forwardRef(function ({ placeholder, height, ...props }, textAreaRef) {
   return (
     <textarea
+      ref={textAreaRef}
       className="textarea"
       style={{ height }}
       placeholder={placeholder}
-      value={value}
-      maxLength={maxLength}
-      onChange={onChange}
+      {...props}
     />
   );
-};
+});
 
 export default TextArea;
