@@ -45,42 +45,42 @@ Feel free to play with it!
 
 #### Fields from Quiz 
 
-```json
+```js
 // QUIZ
-{
-  "id": 1, // Identifier (required)
-  "title": "Food-Related Questions Form", // Title (required)
-  "questions": [] // Questions
+const quiz = {
+  id: 1, // Identifier (required)
+  title: "Food-Related Questions Form", // Title (required)
+  questions: [] // Questions (required)
 }
 ```
 
 Question Details
 
-```json
+```js
 // QUESTION
-{
-  "id": 1, // Question identifier (required)
-  "type": "oneChoice", // Question type ( oneChoice || multipleChoice || inputText )
-  "requiredAnswers": [{ // (required at least a empty array = [])
+const question = {
+  id: 1, // Question identifier (required)
+  type: "oneChoice", // Question type ( oneChoice || multipleChoice || inputText )
+  requiredAnswers: [{ // (required at least a empty array = [])
     "questionId": 1, // one of the previous question identifier (required)
     "answer": 1 // answer from question, needs to be a number like answerId from oneChoice or multipleChoice (required)
   }], 
-  "title": "Favorite Cuisine", // Question title (required)
-  "description": "Choose your favorite type of cuisine from the options below.", // Question description (required)
-  "image": { // If you don't want to use image, just change it for a empty object = {}
-    "width": "250px", // Image width (required)
-    "height": "250px", // Image height (required)
-    "url": "https://images.stockcake.com/public/b/3/b/b3b241cb-3b2b-4007-8f08-1b616570a2ea_large/street-food-vendor-stockcake.jpg", // Image URL (required)
-    "description": "Country food" // Image description to use on alt attribute (required)
+  title: "Favorite Cuisine", // Question title (required)
+  description: "Choose your favorite type of cuisine from the options below.", // Question description (required)
+  image: { // If you don't want to use image, just change it for a empty object = {}
+    width: "250px", // Image width (required)
+    height: "250px", // Image height (required)
+    url: "https://images.stockcake.com/public/b/3/b/b3b241cb-3b2b-4007-8f08-1b616570a2ea_large/street-food-vendor-stockcake.jpg", // Image URL (required)
+    description: "Country food" // Image description to use on alt attribute (required)
   },
-  "options": [ // Question options for oneChoice and multipleChoice question types (required for oneChoice and multipleChoice Questions)
+  options: [ // Question options for oneChoice and multipleChoice question types (required for oneChoice and multipleChoice Questions)
     {
-      "id": 1, // Option identifier (required)
-      "label": "Italian" // Option label (required)
+      id: 1, // Option identifier (required)
+      label: "Italian" // Option label (required)
     },
     {
-      "id": 2,
-      "label": "Chinese"
+      id: 2,
+      label: "Chinese"
     }
   ]
 }
