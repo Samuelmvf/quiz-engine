@@ -4,7 +4,7 @@ import questionSvg from '@/assets/question.svg'
 import './quiz-question.scss'
 
 
-const QuizQuestion = ({ type, title, description, image, options }) => {
+const QuizQuestion = ({ type, title, answer, description, image, options }) => {
   return (
     <div className="question">
       <div className="question__title">
@@ -24,7 +24,7 @@ const QuizQuestion = ({ type, title, description, image, options }) => {
         </div>
       )}
 
-      <QuizAnswer type={type} options={options} />
+      <QuizAnswer type={type} options={options} answer={answer} />
     </div>
   )
 }

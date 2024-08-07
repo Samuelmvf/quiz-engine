@@ -33,6 +33,7 @@ const PageQuiz = () => {
       setCurrentQuestion(nextValidQuestion);
     } else {
       setCurrentQuestion({});
+      console.log("Form response: ", updatedAnswers);
     }
   }
 
@@ -82,7 +83,7 @@ const PageQuiz = () => {
   const getPreviousValidQuestion = (currentQuestionIndex) => {
     const previousQuestionIndex = currentQuestionIndex - 1;
 
-    if (previousQuestionIndex > 0) {
+    if (previousQuestionIndex >= 0) {
       const previousQuestion = { ...mockedQuizData.questions[previousQuestionIndex] };
 
       return answers[`QUESTION_${previousQuestion.id}`] !== NOT_APPLICABLE
@@ -110,7 +111,7 @@ const PageQuiz = () => {
             <QuizForm
               key={currentQuestion.id}
               currentQuestion={currentQuestion}
-              answers={answers}
+              answer={answers[`QUESTION_${currentQuestion.id}`]}
               showPreviousButton={showPreviousButton}
               isLastQuestion={currentQuestion.id === mockedQuizData.questions.at(-1).id}
               handleSubmitAnswer={handleSubmitAnswer}

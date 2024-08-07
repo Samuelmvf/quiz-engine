@@ -1,11 +1,13 @@
 import { useFormContext } from "react-hook-form";
 import Checkbox from "@/components/check-box/check-box.jsx";
+import {NOT_APPLICABLE} from "@/constants/constants.js";
 
-const AnswerCheckBox = ({ options = [] }) => {
-
+const AnswerCheckBox = ({ options = [], answer }) => {
   const { register, setValue, watch } = useFormContext();
 
-  const questionAnswers = watch("answer", []);
+  const defaultAnswerValue = answer === NOT_APPLICABLE || !answer ? [] : answer;
+
+  const questionAnswers = watch("answer", defaultAnswerValue);
 
   const handleToggleCheckBoxSelection = (selected) => {
     const newSelectedAnswers = questionAnswers.includes(selected)
@@ -29,6 +31,7 @@ const AnswerCheckBox = ({ options = [] }) => {
         type="hidden"
         {...register("answer", {
           required: "Select at least one check box",
+          value: defaultAnswerValue
         })}
       />
     </>

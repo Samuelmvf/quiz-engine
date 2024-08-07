@@ -1,31 +1,39 @@
 {
   "id": 1,
-  "title": "Validate persons profile",
+  "title": "Food-Related Questions Form",
   "questions": [
     {
       "id": 1,
       "type": "oneChoice",
       "requiredAnswers": [],
-      "title": "Estado civil",
-      "description": "Qual seu estado civil ?",
+      "title": "Favorite Cuisine",
+      "description": "Choose your favorite type of cuisine from the options below.",
       "image": {
         "width": "250px",
         "height": "250px",
-        "url": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*5RywsoPi0Vr85TkS",
-        "description": "image description"
+        "url": "https://images.stockcake.com/public/b/3/b/b3b241cb-3b2b-4007-8f08-1b616570a2ea_large/street-food-vendor-stockcake.jpg",
+        "description": "Country food"
       },
       "options": [
         {
           "id": 1,
-          "label": "Solteiro"
+          "label": "Italian"
         },
         {
           "id": 2,
-          "label": "Casado"
+          "label": "Chinese"
         },
         {
           "id": 3,
-          "label": "Bipede"
+          "label": "Mexican"
+        },
+        {
+          "id": 4,
+          "label": "Indian"
+        },
+        {
+          "id": 5,
+          "label": "Japanese"
         }
       ]
     },
@@ -33,66 +41,264 @@
       "id": 2,
       "type": "multipleChoice",
       "requiredAnswers": [],
-      "title": "Comida",
-      "description": "Quais frutas você gosta?",
+      "title": "Salad Ingredients",
+      "description": "Select all the ingredients you enjoy in a salad.",
       "image": {
         "width": "250px",
         "height": "250px",
-        "url": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*5RywsoPi0Vr85TkS",
-        "description": "image description"
+        "url": "https://images.stockcake.com/public/c/d/6/cd6023ba-1b75-4f30-aeb6-02ff84403b66_large/colorful-salad-bowl-stockcake.jpg",
+        "description": "Salad"
       },
       "options": [
         {
           "id": 1,
-          "label": "Maça"
+          "label": "Lettuce"
         },
         {
           "id": 2,
-          "label": "Banana"
+          "label": "Tomatoes"
         },
         {
           "id": 3,
-          "label": "Tomate"
+          "label": "Cucumbers"
+        },
+        {
+          "id": 4,
+          "label": "Cheese"
+        },
+        {
+          "id": 5,
+          "label": "Olives"
         }
       ]
     },
     {
       "id": 3,
-      "type": "oneChoice",
-      "requiredAnswers": [{
-        "questionId": 2,
-        "answer": 3
-      }],
-      "title": "Macarrão",
-      "description": "Com que frequência você faz massa de tomate?",
+      "type": "inputText",
+      "requiredAnswers": [],
+      "title": "Comfort Food",
+      "description": "What is your favorite comfort food? Describe it in your own words",
       "image": {
         "width": "250px",
         "height": "250px",
-        "url": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*5RywsoPi0Vr85TkS",
-        "description": "image description"
+        "url": "https://images.stockcake.com/public/1/4/d/14d7088c-694a-4715-9a6a-560e203799d2_large/wood-fired-pizza-ready-stockcake.jpg",
+        "description": "Pizza"
+      }
+    },
+    {
+      "id": 4,
+      "type": "oneChoice",
+      "requiredAnswers": [],
+      "title": "Pasta Sauce Preference",
+      "description": "Select preferred type of sauce for pasta dishes.",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://images.stockcake.com/public/b/1/7/b17c03aa-cd8e-4eac-b4f9-bb964120dc0e_large/tomato-sauce-simmering-stockcake.jpg",
+        "description": "Tomato sauce"
       },
       "options": [
         {
           "id": 1,
-          "label": "Sempre"
+          "label": "Marinara"
         },
         {
           "id": 2,
-          "label": "Mensalmente"
+          "label": "Alfredo"
         },
         {
           "id": 3,
-          "label": "Nunca"
+          "label": "Pesto"
+        },
+        {
+          "id": 4,
+          "label": "Bolognese"
+        },
+        {
+          "id": 5,
+          "label": "No sauce"
         }
       ]
     },
     {
-      "id": 4,
+      "id": 5,
+      "type": "oneChoice",
+      "requiredAnswers": [{
+        "questionId": 4,
+        "answer": 4
+      }],
+      "title": "Favorite Pasta Type",
+      "description": "Choose your favorite type of pasta from the list below.",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://images.stockcake.com/public/7/4/2/7424b042-d423-49da-847b-c66d7217ee0e_large/pasta-preparation-scene-stockcake.jpg",
+        "description": "Pasta"
+      },
+      "options": [
+        {
+          "id": 1,
+          "label": "Spaghetti"
+        },
+        {
+          "id": 2,
+          "label": "Penne"
+        },
+        {
+          "id": 3,
+          "label": "Fettuccine"
+        },
+        {
+          "id": 4,
+          "label": "Ravioli"
+        },
+        {
+          "id": 5,
+          "label": "Macaroni"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "multipleChoice",
+      "requiredAnswers": [],
+      "title": "Commonly Used Spices",
+      "description": "Which spices do you commonly use in your cooking? Select all that apply.",
+      "image": {},
+      "options": [
+        {
+          "id": 1,
+          "label": "Basil"
+        },
+        {
+          "id": 2,
+          "label": "Oregano"
+        },
+        {
+          "id": 3,
+          "label": "Cumin"
+        },
+        {
+          "id": 4,
+          "label": "Paprika"
+        },
+        {
+          "id": 5,
+          "label": "Black Pepper"
+        }
+      ]
+    },
+    {
+      "id": 7,
       "type": "inputText",
       "requiredAnswers": [],
-      "title": "Comida",
-      "description": "Descreva aqui qual é o seu prato preferido e por quê?",
-      "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*5RywsoPi0Vr85TkS"
+      "title": "Ideal Breakfast",
+      "description": "Describe your ideal breakfast in detail.",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://images.stockcake.com/public/3/f/7/3f7743fc-c5b9-4101-b1c2-9c7cd145f03d_large/hearty-breakfast-plate-stockcake.jpg",
+        "description": "Perfect breakfast"
+      }
+    },
+    {
+      "id": 8,
+      "type": "oneChoice",
+      "requiredAnswers": [],
+      "title": "Steak Doneness",
+      "description": "How do you prefer your steak to be cooked?",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://images.stockcake.com/public/a/d/6/ad65750b-0479-4053-988d-10852125be5b_large/succulent-steak-dinner-stockcake.jpg",
+        "description": "Steak"
+      },
+      "options": [
+        {
+          "id": 1,
+          "label": "Rare"
+        },
+        {
+          "id": 2,
+          "label": "Medium Rare"
+        },
+        {
+          "id": 3,
+          "label": "Medium"
+        },
+        {
+          "id": 4,
+          "label": "Medium Well"
+        },
+        {
+          "id": 5,
+          "label": "Well Done"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "inputText",
+      "requiredAnswers": [{
+        "questionId": 8,
+        "answer": 1
+      }],
+      "title": "Rare Steak",
+      "description": "Why do you consider Rare the perfect state, provide more details.",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://images.stockcake.com/public/d/3/3/d338cb1e-08ab-48b1-a3d8-5f3937d46cf2_large/juicy-grilled-steak-stockcake.jpg",
+        "description": "Rare Steak"
+      }
+    },
+    {
+      "id": 10,
+      "type": "multipleChoice",
+      "requiredAnswers": [],
+      "title": "Favorite Cheeses",
+      "description": "Select the types of cheeses you enjoy.",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://images.stockcake.com/public/9/8/a/98a61aa7-539a-4aa2-81ab-a3f7215e01e4_large/cheese-market-selection-stockcake.jpg",
+        "description": "Cheese"
+      },
+      "options": [
+        {
+          "id": 1,
+          "label": "Cheddar"
+        },
+        {
+          "id": 2,
+          "label": "Mozzarella"
+        },
+        {
+          "id": 3,
+          "label": "Gouda"
+        },
+        {
+          "id": 4,
+          "label": "Blue Cheese"
+        },
+        {
+          "id": 5,
+          "label": "Brie"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "inputText",
+      "requiredAnswers": [],
+      "title": "Favorite Dessert",
+      "description": "What is your favorite dessert and why do you like it?",
+      "image": {
+        "width": "250px",
+        "height": "250px",
+        "url": "https://images.stockcake.com/public/f/3/2/f320274f-e2e2-45fc-8790-c2324fb84c7c_large/elegant-dessert-plate-stockcake.jpg",
+        "description": "Dessert"
+      }
     }
   ]
 }

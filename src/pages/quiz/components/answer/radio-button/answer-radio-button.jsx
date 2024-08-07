@@ -3,8 +3,10 @@ import { useFormContext } from "react-hook-form";
 
 import RadioButton from "@/components/radio-button/radio-button.jsx";
 
-const AnswerRadioButton = ({ options = [], questionId }) => {
+const AnswerRadioButton = ({ options = [], answer }) => {
   const radioButtonRef = useRef(null);
+
+  const defaultRadioValue = Number.isInteger(answer) ? answer.toString() : ''
 
   const { watch, setValue, register } = useFormContext();
   const questionAnswer = watch("answer");
@@ -15,7 +17,7 @@ const AnswerRadioButton = ({ options = [], questionId }) => {
         <RadioButton
           ref={radioButtonRef}
           key={option.id}
-          {...register("answer", { required: "This field is required. Please choose one." })}
+          {...register("answer", { value: defaultRadioValue, required: "This field is required. Please choose one." })}
           name="answer"
           label={option.label}
           checked={questionAnswer === option.id}

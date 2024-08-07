@@ -6,18 +6,20 @@ import AnswerInputText from "@/pages/quiz/components/answer/input-text/answer-in
 
 import { QUESTION_TYPE } from "@/constants/question-type.js";
 
-const QuizAnswer = ({ type, options }) => {
+import './quiz-answer.scss'
 
-  if (QUESTION_TYPE.ONE_CHOICE === type) {
-    return <AnswerRadioButton options={options} />
-  }
+const QuizAnswer = ({ type, options, answer }) => {
 
-  if (QUESTION_TYPE.MULTIPLE_CHOICE === type) {
-    return <AnswerCheckBox options={options} />
+  const typeToAnswer = {
+    [QUESTION_TYPE.ONE_CHOICE]: <AnswerRadioButton options={options} answer={answer} />,
+    [QUESTION_TYPE.MULTIPLE_CHOICE]: <AnswerCheckBox options={options} answer={answer} />,
+    [QUESTION_TYPE.INPUT_TEXT]: <AnswerInputText answer={answer} />,
   }
 
   return (
-    <AnswerInputText />
+    <div className="question__answer">
+      {typeToAnswer[type]}
+    </div>
   )
 }
 
