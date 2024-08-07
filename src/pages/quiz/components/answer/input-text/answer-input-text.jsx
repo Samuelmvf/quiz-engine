@@ -10,7 +10,7 @@ const AnswerInputText = () => {
   return (
     <TextArea
       ref={textAreaRef}
-      {...register("answer", { required: true }) }
+      {...register("answer", { required: "This field is required." }) }
       height="5rem"
       placeholder="Type your answer..."
     />

@@ -6,10 +6,10 @@ import QuizQuestion from "@/pages/quiz/components/question/quiz-question.jsx";
 
 import './quiz-form.scss'
 
-const QuizForm = ({ currentQuestion, answers, showPreviousButton, handleSubmitAnswer, handleBackForPreviousQuestion }) => {
+const QuizForm = ({ currentQuestion, showPreviousButton, isLastQuestion, handleSubmitAnswer, handleBackForPreviousQuestion }) => {
   const methods = useForm();
 
-  const { handleSubmit, formState: { errors}} = methods;
+  const { handleSubmit, formState: { errors } } = methods;
   const { answer: answerError } = errors;
 
   return (
@@ -28,7 +28,7 @@ const QuizForm = ({ currentQuestion, answers, showPreviousButton, handleSubmitAn
 
         <footer className={`form__actions${showPreviousButton ? '' : '--single-button'}`}>
           {showPreviousButton && <Button text="Previous Question" onClick={handleBackForPreviousQuestion} />}
-          <Button text="Next question" type="submit" />
+          <Button text={isLastQuestion ? "Finish quiz" : "Next question" } type="submit" />
         </footer>
       </form>
     </FormProvider>

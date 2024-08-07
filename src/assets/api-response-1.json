@@ -61,7 +61,7 @@
       "type": "oneChoice",
       "requiredAnswers": [{
         "questionId": 2,
-        "answerId": 3
+        "answer": 3
       }],
       "title": "Macarrão",
       "description": "Com que frequência você faz massa de tomate?",
