@@ -102,4 +102,7 @@ npm run dev
 
 The application will be started at localhost, please take a look on your console log, to check what port the application is running.
 
+App deployed at Vercel:
+https://quiz-engine-roan.vercel.app/
+
 
